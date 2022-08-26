@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block header %}
+<style>
+    .font-h3 {
+        margin-bottom: 30px;
+        line-height: 1.4em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.4375rem;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-12 col-md-4">
+        <span class="font-h3">{{user}}</span>
+    </div>
+</div>
+{% endblock %}
